@@ -3,7 +3,7 @@
 ```
 docker pull mysql
 
-docker run -d -p 127.0.0.1:6606:3306 \
+docker run -d -p 192.168.202.137:6606:3306 \
 --name open_source_mysqldb \
 -e MYSQL_ROOT_PASSWORD=root \
 mysql
@@ -12,7 +12,7 @@ mysql
 ## 创建数据库和账号权限配置
 
 ```
-$ mysql -h 127.0.0.1 -P 6606 -u root -p
+$ mysql -h 192.168.202.137 -P 6606 -u root -p
 Enter password:root
 
 mysql> CREATE DATABASE IF NOT EXISTS vuldb DEFAULT CHARSET utf8 COLLATE utf8_general_ci;
