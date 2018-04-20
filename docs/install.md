@@ -129,7 +129,7 @@ docker pull daocloud.io/liusheng/vulpm_docker:latest
 docker build -t='vulpm_docker' .
 
 # 在项目目录下启动容器，确保当前目录下存在srcpm文件夹，MAIL_PASSOWRD替换为自己邮箱服务器的密码。
-$ docker run -d -p 127.0.0.1:9000:5000 \
+$ docker run -d -p 192.168.202.137:9000:5000 \
 --link open_source_mysqldb:db \
 --name open_source_srcpm \
 -v $PWD/srcpm:/opt/webapp/srcpm \
